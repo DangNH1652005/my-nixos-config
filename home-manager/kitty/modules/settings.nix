@@ -1,0 +1,32 @@
+{ config, pkgs, ... }:
+
+{
+  programs.kitty.settings = {
+    scrollback_lines = 1000;
+
+    disable_ligatures = "no";
+    enable_audio_bell = "no";
+
+    shell = "zsh";
+    shell_integration = "no-rc";
+
+    cursor_shape = "block";
+    cursor_blink_interval = 0;
+
+    url_style = "curly";
+
+    remember_window_size = "no";
+    initial_window_width = 640;
+    initial_window_height = 480;
+
+    window_padding_width = 5;
+    background_opacity = "0.80";
+
+    scrollbar_handle_opacity = 0;
+    scrollbar_track_opacity = 0;
+    scrollbar_track_hover_opacity = 0;
+
+    confirm_os_window_close = 0;
+    sync_to_monitor = "no";
+  };
+}

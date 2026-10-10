@@ -1,0 +1,97 @@
+{ config, pkgs, ... }:
+
+{
+  programs.waybar.style = ''
+    * {
+      font-family: "JetBrainsMono Nerd Font";
+      font-size: 13px;
+      font-weight: 500;
+      min-height: 0;
+    }
+
+    window#waybar {
+      background: #1a1118;
+      color: #f8e8ee;
+    }
+
+    #workspaces {
+      padding: 0 4px;
+    }
+
+    #workspaces button {
+      padding: 0 8px;
+      margin: 0 2px;
+      border-radius: 6px;
+      border: none;
+      color: #a98f9a;
+      background: transparent;
+      transition: all 0.2s ease;
+    }
+
+    #workspaces button:hover {
+      color: #f4a7c1;
+      background: #2a1b24;
+    }
+
+    #workspaces button.active {
+      color: #ffffff;
+      background: #c96b8c;
+    }
+
+    #workspaces button.urgent {
+      color: #ffffff;
+      background: #b84a68;
+    }
+
+    #window {
+      padding: 0 10px;
+      color: #c9a8b5;
+    }
+
+    #clock {
+      padding: 0 12px;
+      color: #f4a7c1;
+      font-weight: bold;
+    }
+
+    #tray,
+    #network,
+    #pulseaudio,
+    #battery {
+      padding: 0 9px;
+      color: #e8cbd5;
+      background: transparent;
+    }
+
+    #tray:hover,
+    #network:hover,
+    #pulseaudio:hover,
+    #battery:hover {
+      color: #f4a7c1;
+      background: #2a1b24;
+    }
+
+    #battery.warning {
+      color: #e8b86d;
+    }
+
+    #battery.critical {
+      color: #e07088;
+    }
+
+    #battery.charging {
+      color: #a8d5ba;
+    }
+
+    tooltip {
+      background: #21151c;
+      border: 1px solid #9f526e;
+      border-radius: 6px;
+    }
+
+    tooltip label {
+      padding: 5px 8px;
+      color: #f8e8ee;
+    }
+  '';
+}
