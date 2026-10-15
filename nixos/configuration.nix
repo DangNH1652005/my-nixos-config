@@ -41,7 +41,7 @@
   
   # mysql
   services.mysql = {
-    enable = true;
+    enable = false;
     package = pkgs.mariadb;
   };
   
