@@ -1,13 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ./modules/settings.nix
-    ./modules/colors.nix
-    ./modules/font.nix
-  ];
+  programs.kitty.enable = true;
 
-  programs.kitty = {
-    enable = true;
-  };
+  xdg.configFile."kitty/kitty.conf".source =
+    ../../config/kitty/kitty.conf;
 }
