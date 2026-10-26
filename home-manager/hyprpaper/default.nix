@@ -7,7 +7,7 @@
     settings = {
       wallpaper = {
         monitor = "";
-        path =   "${config.home.homeDirectory}/Pictures/wallpapers/Fantasy-Lanscape-Night.png";
+        path =   "${config.home.homeDirectory}/Pictures/wallpapers/Fantasy-Lake2.png";
         fit_mode = "cover";
       };
 

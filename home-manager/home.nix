@@ -16,9 +16,21 @@
     ./cursor
     ./tmux
     ./git
+    ./nvim
   ];
 
   home.packages = with pkgs; [
+    unzip
+
+    python3
+    pyright
+    black
+
+    go
+    gopls
+    gotools
+    golangci-lint
+
     yazi
     pciutils
     

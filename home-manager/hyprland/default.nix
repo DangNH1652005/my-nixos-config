@@ -3,10 +3,10 @@
   wayland.windowManager.hyprland = {
     enable = true;
 
-    extraConfig = builtins.readFile ./config/hypr/hyprland.lua;
+    extraConfig = builtins.readFile ../../config/hypr/hyprland.lua;
   };
 
-  xdg.configFile."hypr/modules".source = ./config/hypr/modules;
+  xdg.configFile."hypr/modules".source = ../../config/hypr/modules;
 }
 
 # { config, pkgs, ... }:
