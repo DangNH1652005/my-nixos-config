@@ -33,7 +33,5 @@
       set -g status-right '%H:%M %d-%m-%Y'
 
     '';
-
-
   };
 }

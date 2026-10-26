@@ -6,5 +6,5 @@
     package = pkgs.rofi;
   };
 
-  xdg.configFile."rofi".source = ./config/rofi;
+  xdg.configFile."rofi".source = ../../config/rofi;
 }
